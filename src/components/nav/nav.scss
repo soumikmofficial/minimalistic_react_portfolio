@@ -1,0 +1,58 @@
+@import "../../global.scss";
+.nav {
+  background-color: pink;
+  height: 10vh;
+  padding: 0 5%;
+  @include flex-center;
+  background-color: $mainColor;
+  color: $secondaryColor;
+
+  & .left {
+    flex: 1;
+    @include flex-center;
+    justify-content: space-between;
+
+    & .brand {
+      flex: 0.3;
+      & a {
+        font-size: 3rem;
+        font-weight: 600;
+        color: $secondaryColor;
+      }
+    }
+
+    & .contact-info {
+      display: none;
+
+      @include largeTab {
+        @include flex-center;
+        justify-content: flex-end;
+        flex: 0.7;
+      }
+      & .info {
+        @include flex-center;
+        margin-left: 10%;
+
+        & .icon {
+          font-size: 1.8rem;
+          margin-right: 0.8rem;
+        }
+
+        & span {
+          font-size: 1.3rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  & .right {
+    flex: 1;
+    @include flex-center;
+    justify-content: flex-end;
+
+    & .hamburger {
+      font-size: 5rem;
+    }
+  }
+}
