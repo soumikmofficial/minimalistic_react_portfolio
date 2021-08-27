@@ -1,11 +1,43 @@
 @import "../../global.scss";
 
 .menu {
-  background: yellow;
+  background-color: $mainColor;
   width: 100vw;
   height: 90vh;
   position: fixed;
   top: 10vh;
-  right: 0;
-  transform: translateX(50%);
+  right: 0%;
+  transform: translateX(100%);
+  transition: $transitionEase;
+  @include flex-center;
+
+  &.active {
+    transform: translateX(0%);
+    background-color: $secondaryColor;
+  }
+
+  @include largeTab {
+    width: 25%;
+  }
+
+  & ul {
+    height: 100%;
+    width: 100%;
+    @include flex-center;
+    flex-direction: column;
+
+    & li {
+      margin: 5% 0;
+      & a {
+        font-size: 3rem;
+        text-transform: capitalize;
+        color: $mainColor;
+        transition: $transitionEase;
+
+        &:hover {
+          font-weight: 600;
+        }
+      }
+    }
+  }
 }

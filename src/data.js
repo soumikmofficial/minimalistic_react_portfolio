@@ -1,27 +1,14 @@
 export const data = {
   menu: [
     {
-      id: 1,
       name: "home",
       url: "#intro",
     },
     {
-      id: 2,
-      name: "works",
-      url: "#works",
-    },
-    {
-      id: 3,
       name: "portfolio",
       url: "#portfolio",
     },
     {
-      id: 4,
-      name: "testimonials",
-      url: "#testimonials",
-    },
-    {
-      id: 5,
       name: "contact",
       url: "#contact",
     },

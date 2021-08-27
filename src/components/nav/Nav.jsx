@@ -6,13 +6,15 @@ import PersonAddIcon from "@material-ui/icons/PersonAdd";
 import MailIcon from "@material-ui/icons/Mail";
 import MenuIcon from "@material-ui/icons/Menu";
 
-function Nav() {
+function Nav({ menuOpen, setMenuOpen }) {
   const contact = data.contact;
   return (
-    <div className="nav" id="nav">
+    <div className={menuOpen ? "nav active" : "nav"}>
       <div className="left">
         <div className="brand">
-          <a href="">theWebGuy.</a>
+          <a href="" id="brand-link">
+            theWebGuy.
+          </a>
         </div>
         <div className="contact-info">
           {contact.phone && (
@@ -31,7 +33,10 @@ function Nav() {
       </div>
 
       <div className="right">
-        <MenuIcon className="hamburger" />
+        <MenuIcon
+          className="hamburger"
+          onClick={() => setMenuOpen(!menuOpen)}
+        />
       </div>
     </div>
   );
