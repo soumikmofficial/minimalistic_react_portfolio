@@ -34,7 +34,7 @@ function Portfolio() {
               return (
                 <li
                   key={index}
-                  className={category === selected && "active"}
+                  className={category === selected ? "active" : ""}
                   onClick={() => setSelected(category)}
                 >
                   {category}

@@ -16,7 +16,7 @@ function Intro() {
     });
   }, []);
   return (
-    <div className="intro">
+    <div className="intro" id="intro">
       <div className="left">
         <div className="img-container">
           <img src="assets/avatar3.svg" width="100px" />
