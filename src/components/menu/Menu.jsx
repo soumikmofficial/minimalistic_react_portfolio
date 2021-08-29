@@ -10,7 +10,9 @@ function Menu({ menuOpen, setMenuOpen }) {
         {items.map((item, index) => {
           return (
             <li key={index}>
-              <a href={item.url}>{item.name}</a>
+              <a href={item.url} onClick={() => setMenuOpen(false)}>
+                {item.name}
+              </a>
             </li>
           );
         })}

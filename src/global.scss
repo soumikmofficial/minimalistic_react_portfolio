@@ -14,8 +14,8 @@ $highlight2: #cc7b7b;
 $mainColor: #faf8f8;
 $secondaryColor: #23292e;
 $sectionPadding: 5% 10%;
-$mobilePadding: 5% 3%;
-$transitionEase: all 0.3s ease;
+$mobilePadding: 10% 3%;
+$transitionEase: all 0.4s ease;
 
 @mixin flex-center {
   display: flex;
@@ -23,8 +23,20 @@ $transitionEase: all 0.3s ease;
   align-items: center;
 }
 
+@mixin smallTab {
+  @media (min-width: 500px) {
+    @content;
+  }
+}
+
+@mixin midTab {
+  @media (min-width: 700px) {
+    @content;
+  }
+}
+
 @mixin largeTab {
-  @media (min-width: 1100px) {
+  @media (min-width: 1162px) {
     @content;
   }
 }

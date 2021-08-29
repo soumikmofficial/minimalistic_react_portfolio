@@ -1,0 +1,14 @@
+@import "../../global.scss";
+
+.singleProject {
+  background-color: pink;
+  width: 80%;
+  min-height: 26rem;
+  border-radius: 1rem;
+  min-width: 27rem;
+  padding: 4% 2%;
+
+  & img {
+    width: 100%;
+  }
+}

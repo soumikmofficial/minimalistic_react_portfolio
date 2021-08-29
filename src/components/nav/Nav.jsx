@@ -13,7 +13,7 @@ function Nav({ menuOpen, setMenuOpen }) {
       <div className="left">
         <div className="brand">
           <a href="" id="brand-link">
-            theWebGuy.
+            the<span className="web">Web</span>Guy.
           </a>
         </div>
         <div className="contact-info">
