@@ -7,6 +7,10 @@
   padding: $mobilePadding;
   text-align: center;
 
+  @include midTab {
+    padding: $sectionPadding;
+  }
+
   & .header {
     & h2 {
       font-size: 3rem;
@@ -20,7 +24,7 @@
 
     & .categories {
       margin: 4rem 0;
-      width: 100%;
+      width: 70%;
       & ul {
         display: flex;
         flex-wrap: wrap;
@@ -28,12 +32,12 @@
         & li {
           font-size: 2rem;
           margin: 0 5%;
-          // line-height: 6rem;
           margin-bottom: 1rem;
           font-weight: 700;
           text-transform: capitalize;
           padding: 0.5rem 1.2rem;
           border-radius: 1rem;
+          cursor: pointer;
 
           &.active {
             background-color: $secondaryColor;
@@ -48,6 +52,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include midTab {
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
     }
   }
 }

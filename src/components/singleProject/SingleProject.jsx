@@ -5,10 +5,12 @@ import React from "react";
 function SingleProject({ name, url, category, image }) {
   return (
     <div className="singleProject">
-      <a href={url}>
-        <img src={image} alt="" />
-        <h3>{name}</h3>
-      </a>
+      {/* style={{ backgroundImage: `url(${image})` }} */}
+      {/* <a href={url}></a> */}
+      <img src={image} alt="" />
+      <h3>
+        <a href="">{name}</a>
+      </h3>
     </div>
   );
 }
