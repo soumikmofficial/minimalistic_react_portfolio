@@ -1,4 +1,35 @@
 @import "../../global.scss";
 .services {
-  background: pink;
+  background: linear-gradient(
+    90deg,
+    rgba(153, 81, 81, 1) 0%,
+    rgba(35, 41, 46, 1) 117%
+  );
+  @include flex-center;
+  height: 90vh;
+  padding: $mobilePadding;
+  position: relative;
+
+  & .wrapper {
+    width: 100%;
+    height: 85%;
+    @include flex-center;
+    position: relative;
+  }
+
+  & .next-prev {
+    color: $mainColor;
+    font-size: 5rem;
+    position: absolute;
+    bottom: 3%;
+    cursor: pointer;
+  }
+
+  & .left {
+    left: 30%;
+  }
+
+  & .right {
+    right: 30%;
+  }
 }

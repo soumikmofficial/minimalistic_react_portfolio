@@ -40,7 +40,7 @@ export const data = {
     {
       id: 1,
       name: "Design",
-      comments: [
+      details: [
         "A complete modern-day web design that makes you stand out.",
         "Personalization that you deserve, that you demand.",
         "Fully responsive so that you are available to all the devices.",
@@ -50,7 +50,7 @@ export const data = {
     {
       id: 2,
       name: "SEO",
-      comments: [
+      details: [
         "Reach your audience at their very first search.",
         "Rank at the top of the search results of all the major search engines.",
         "Algorithm that keeps you not only relevant but ahead of your competetors.",
@@ -60,7 +60,7 @@ export const data = {
     {
       id: 3,
       name: "Full Stack",
-      comments: [
+      details: [
         "Not just the front end, but a complete solution with a backend.",
         "From blogs, to social media, to e-commerce. Fully secure and interactive solution.",
       ],
