@@ -6,30 +6,70 @@
     rgba(35, 41, 46, 1) 117%
   );
   @include flex-center;
+  flex-direction: column;
+  justify-content: flex-start;
   height: 90vh;
   padding: $mobilePadding;
   position: relative;
 
+  @include smallPc {
+    padding: $sectionPadding;
+  }
+
+  & h2 {
+    color: $mainColor;
+    font-size: 3.5rem;
+    margin-bottom: 15%;
+
+    @include smallPc {
+      margin: 5%;
+    }
+  }
+
   & .wrapper {
     width: 100%;
-    height: 85%;
+    height: 65%;
+    max-width: 62.5rem;
     @include flex-center;
     position: relative;
+
+    @include longScreen {
+      max-height: 33rem;
+    }
+
+    @include midTab {
+      height: 56%;
+      width: 60%;
+    }
   }
 
   & .next-prev {
     color: $mainColor;
     font-size: 5rem;
     position: absolute;
-    bottom: 3%;
+    bottom: 4%;
     cursor: pointer;
+
+    @include longScreen {
+      bottom: 12%;
+    }
+
+    @include midTab {
+      bottom: 45%;
+    }
   }
 
   & .left {
     left: 30%;
+    @include midTab {
+      left: 10%;
+    }
   }
 
   & .right {
     right: 30%;
+    @include midTab {
+      right: 10%;
+    }
   }
 }

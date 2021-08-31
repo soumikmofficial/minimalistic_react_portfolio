@@ -39,14 +39,20 @@
     text-align: center;
     // background: yellow;
     & ul {
-      @include flex-center;
-      flex-direction: column;
+      //   @include flex-center;
+      height: 100%;
+      //   flex-direction: column;
+      //   justify-content: flex-start;
+
+      @include midTab {
+        align-items: flex-start;
+      }
       & li {
         border-radius: 0.5rem;
         font-size: 1.8rem;
         font-weight: 500;
         margin: 2rem 0;
-        padding: 1rem;
+        padding: 0.5rem;
         color: $secondaryColor;
         background-color: $mainColor;
         &:nth-of-type(even) {

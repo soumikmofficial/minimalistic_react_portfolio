@@ -46,7 +46,7 @@
     & .contact-info {
       display: none;
 
-      @include largeTab {
+      @include smallPc {
         @include flex-center;
         justify-content: flex-end;
         flex: 0.7;

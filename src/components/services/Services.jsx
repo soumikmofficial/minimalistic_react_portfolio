@@ -17,9 +17,20 @@ function Services() {
     if (index > lastIndex) {
       setIndex(0);
     }
-  }, [index]);
+  }, [index, services]);
+
+  useEffect(() => {
+    let slide = setTimeout(() => {
+      setIndex(index + 1);
+    }, 8000);
+
+    return () => {
+      clearTimeout(slide);
+    };
+  });
   return (
     <div className="services" id="services">
+      <h2>Services</h2>
       <div className="wrapper">
         {services.map((service, currentIndex) => (
           <SingleService

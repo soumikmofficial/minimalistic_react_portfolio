@@ -8,7 +8,7 @@
   @include flex-center;
   flex-direction: column;
 
-  @include largeTab {
+  @include smallPc {
     padding: $sectionPadding;
     flex-direction: row;
   }
@@ -34,7 +34,7 @@
         padding-bottom: 60%;
       }
 
-      @include largeTab {
+      @include smallPc {
         width: 75%;
         padding-bottom: 75%;
       }
@@ -57,7 +57,7 @@
       text-align: center;
       display: flex;
       flex-direction: column;
-      @include largeTab {
+      @include smallPc {
         text-align: left;
       }
 
@@ -67,7 +67,7 @@
         @include midTab {
           font-size: 2rem;
         }
-        @include largeTab {
+        @include smallPc {
           font-size: 2.4rem;
         }
       }
@@ -79,7 +79,7 @@
         @include midTab {
           font-size: 4rem;
         }
-        @include largeTab {
+        @include smallPc {
           font-size: 4.7rem;
         }
       }
@@ -89,7 +89,7 @@
         @include midTab {
           font-size: 2rem;
         }
-        @include largeTab {
+        @include smallPc {
           font-size: 2.4rem;
         }
 

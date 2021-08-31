@@ -13,14 +13,21 @@ $highlight: #995151;
 $highlight2: #cc7b7b;
 $mainColor: #faf8f8;
 $secondaryColor: #23292e;
-$sectionPadding: 5% 10%;
-$mobilePadding: 10% 3%;
+$sectionPadding: 2% 10%;
+$mobilePadding: 6% 3%;
+$tabPadding: 10% 5%;
 $transitionEase: all 0.4s ease;
 
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin longScreen {
+  @media (max-width: 700px) and (min-height: 700px) {
+    @content;
+  }
 }
 
 @mixin smallTab {
@@ -35,8 +42,20 @@ $transitionEase: all 0.4s ease;
   }
 }
 
-@mixin largeTab {
-  @media (min-width: 1162px) {
+@mixin smallPc {
+  @media (min-width: 1057px) {
+    @content;
+  }
+}
+
+@mixin midPc {
+  @media (min-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin largePc {
+  @media (min-width: 1600px) {
     @content;
   }
 }

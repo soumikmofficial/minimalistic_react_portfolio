@@ -18,11 +18,11 @@ html {
   }
 
   @include smallTab {
-    font-size: 70%;
+    font-size: 66%;
   }
 
-  @include largeTab {
-    font-size: 72%;
+  @include smallPc {
+    font-size: 66%;
   }
 }
 

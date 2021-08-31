@@ -17,7 +17,7 @@
     background-color: $secondaryColor;
   }
 
-  @include largeTab {
+  @include smallPc {
     width: 20%;
   }
 
